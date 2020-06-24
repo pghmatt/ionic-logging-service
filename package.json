@@ -17,6 +17,7 @@
     "log4javascript"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run build-service && npm run build-viewer && npm run build-viewer-app",
     "build-service": "ng build ionic-logging-service --prod && cpx 'projects/ionic-logging-service/README.md' dist/ionic-logging-service --verbose",
     "build-viewer": "ng build ionic-logging-viewer --prod && cpx 'projects/ionic-logging-viewer/README.md' dist/ionic-logging-viewer --verbose",
