@@ -9,6 +9,7 @@
   "repository": "https://github.com/Ritzlgrmft/ionic-logging-service.git",
   "license": "MIT",
   "private": false,
+  "prepare": "npm run build",
   "keywords": [
     "ionic",
     "angular",
