@@ -52,6 +52,7 @@ export class AjaxAppender extends log4javascript.Appender {
 
 		this.ajaxAppender.setLayout(new log4javascript.JsonLayout(false, false));
 		this.ajaxAppender.addHeader("Content-Type", "application/json; charset=utf-8");
+    this.ajaxAppender.addHeader("Matt-Header", "Test");
 		this.ajaxAppender.setSendAllOnUnload(true);
 
 		this.appenderFailed = new EventEmitter<string>();
